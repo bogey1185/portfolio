@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title></title>
@@ -8,11 +8,40 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.ui.js"></script>
 </head>
 <body>
-  <h1>David Bogaerts</h1>
+  <header>
+    <h1>David Bogaerts</h1>
+    <nav>
+      <p>about me</p>
+      <p>portfolio</p>
+      <p>resume</p>
+    </nav>
+  </header>
 
   <h2>About me</h2>
 
   <h2>Projects</h2>
+    <p>Here are a few of my projects:</p>
+    <ul>
+      <li><a href="https://bogey1185.github.io/GA_Unit-1-Project/">Farkle</a></li>
+    </ul>
+
+  <div class="test transition" id="farkle">
+    <div id="farkleinner">
+      <h1>FARKLE!</h1>
+      <p>the classic dice game</p>
+    </div>
+  </div>
+  <div class="test transition" id="pollster">
+    <div id="pollsterinner">
+      <h1>POLLSTER!</h1>
+      <p>this is a polling app</p>
+    </div>
+  </div>
+
+  <input type="button" id="button" value="Farkle"></input>
+  <input type="button" id="button2" value="Pollster"></input>
+  <input type="button" id="button3" value="Show All Projects"></input>
+
 
 	<script type="text/javascript" src="js/app.js"></script>
 </body>
