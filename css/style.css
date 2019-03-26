@@ -16,15 +16,16 @@ body {
 }
 
 .header-logo {
-  width: 50%;
+  width: 12%;
 }
 
 .header-nav {
-  width: 50%;
+  width: 88%;
   color: rgb(238,238,238);
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  margin-bottom: 3px;
 }
 
 .header-logo img {
@@ -52,7 +53,7 @@ body {
   border-bottom: 2px solid rgb(238,238,238);
   margin-left: 3px;
   height: 6vh;
-  width: 2vw;
+  width: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,6 +67,7 @@ body {
 
 .navlink {
   height: 6vh;
+  min-width: 67px;
   width: 10vw;
   display: flex;
   flex-direction: column;
@@ -108,4 +110,8 @@ body {
   visibility: visible;
 }
 
-
+@media screen and (max-width: 460px) {
+  .navlink {
+    visibility: hidden;
+  }
+}
