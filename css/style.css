@@ -134,8 +134,9 @@ main {
   font-family: 'Open Sans Condensed', sans-serif;
   text-align: center;
   position: relative;
-  top: 250px;
+  top: 300px;
   z-index: 1;
+  width: 40vw;
 }
 
 .overlay-content h1 {
@@ -147,25 +148,10 @@ main {
   font-size: 1.5em;
 }
 
-#aboutme {
-  font-family: 'Josefin Slab', serif;
-  width: 69vw;
-  background-color: white;
-  margin-bottom: 50px;
-  padding: 10px;
-  box-shadow: 0 0 15px rgba(0,0,125,.5);
-}
 
-#projects {
-  font-family: 'Josefin Slab', serif;
-  width: 69vw;
-  background-color: white;
-  margin-bottom: 50px;
-  padding: 10px;
-  box-shadow: 0 0 15px rgba(0,0,125,.5);
-}
+/* Content styling */
 
-#contact {
+.contentdiv {
   font-family: 'Josefin Slab', serif;
   width: 69vw;
   background-color: white;
@@ -175,6 +161,41 @@ main {
 }
 
 
+/* Projects section */
+
+.projectshow {
+  display: flex;
+}
+
+.showimg {
+}
+
+.showimg img {
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+  width: 30vw;
+}
+
+.showcontent {
+  margin-left: 10px;
+}
+
+.showcontent h2 {
+  margin: 0;
+  display: inline;
+}
+
+.showcontent a {
+  color: blue;
+}
+
+.showcontent img {
+  display: inline;
+  height: 24px;
+  margin: 5px; 
+}
+
+
+/* Contact section */
 
 .contact-info img {
   height: 48px;
