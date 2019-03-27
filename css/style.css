@@ -1,18 +1,39 @@
 /*imported fonts*/
-/*font-family: 'Fredericka the Great', cursive;
-font-family: 'Josefin Slab', serif;
-*/
+/*font-family: 'Open Sans Condensed', sans-serif;*/
+/*font-family: 'Josefin Slab', serif;*/
+/*font-family: 'Fredericka the Great', cursive;*/
 body {
   margin: 0;
   background-color: rgb(238,238,238);
+  display: flex;
+  flex-direction: column;
 }
+
+.home {
+  height:90vh;
+  width: 100vw;
+  background-image: url('../images/background2.png');
+  background-size: cover;
+  position: absolute;
+  top: 11vh;
+  overflow-y: scroll;
+  z-index: -2;
+}
+
+.home img {
+  background-image: cover;
+}
+
+/* HEADER/NAV BAR */
 
 .header {
   background-color: rgba(57,62,70,1);
   display: flex;
   justify-content: flex-start;
   height: 10vh;
+  width: 100vw;
   padding: 5px;
+  position: fixed;
 }
 
 .header-logo {
@@ -26,6 +47,7 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   margin-bottom: 3px;
+  padding-right: 10px;
 }
 
 .header-logo img {
@@ -57,12 +79,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .svgs:hover {
   background-color: rgb(238,238,238);
-
 }
 
 .navlink {
@@ -83,6 +103,82 @@ body {
   background-color: rgb(238,238,238);
   color: rgba(57,62,70,1);
   cursor: pointer;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#frontpage {
+  background-image: url("../images/codinglaptop.jpg");
+  background-size: cover;
+  height: 60vh;
+  width: 70vw;
+  z-index: -1;
+}
+
+.fp-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(23, 65, 132);
+  opacity: .4;
+  z-index: 0;
+}
+
+.overlay-content {
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: center;
+  position: relative;
+  top: 250px;
+  z-index: 1;
+}
+
+.overlay-content h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+
+.overlay-content text {
+  font-size: 1.5em;
+}
+
+#aboutme {
+  font-family: 'Josefin Slab', serif;
+  width: 69vw;
+  background-color: white;
+  margin-bottom: 50px;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(0,0,125,.5);
+}
+
+#projects {
+  font-family: 'Josefin Slab', serif;
+  width: 69vw;
+  background-color: white;
+  margin-bottom: 50px;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(0,0,125,.5);
+}
+
+#contact {
+  font-family: 'Josefin Slab', serif;
+  width: 69vw;
+  background-color: white;
+  margin-bottom: 50px;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(0,0,125,.5);
+}
+
+
+
+.contact-info img {
+  height: 48px;
+  width: 48px;
 }
 
 .test {
