@@ -232,3 +232,14 @@ main {
     visibility: hidden;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .projectshow {
+    flex-direction: column;
+  }
+
+  .showimg img {
+    width: 100t%;
+    margin-bottom: 5px;
+  }
+}
